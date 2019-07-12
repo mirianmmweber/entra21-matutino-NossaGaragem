@@ -21,7 +21,18 @@
             <th>Ação</th>
         </tr>
     </thead>
-    <tbody></tbody>
+    <tbody>
+        @foreach(Model.Veiculo veiculo in ViewBag.Veiculos)
+        {
+        <tr>
+            <td>@veiculo.Id</td>
+            <td>@veiculo.Categoria.Nome</td>
+            <td>@veiculo.Modelo</td>
+            <td>@veiculo.Valor</td>
+            <td></td>
+        </tr>
+        }
+    </tbody>
     <tfoot>
         <tr>
             <th>Código</th>

@@ -46,7 +46,7 @@ INNER JOIN categorias ON
                 veiculo.Id = Convert.ToInt32(linha["VeiculoId"]);
                 veiculo.Modelo = linha["VeiculoModelo"].ToString();
                 veiculo.Valor = Convert.ToDecimal(linha["VeiculoValor"]);
-                veiculo.IdCategoria = Convert.ToInt32(linha["VeiculoCategoria"]);
+                veiculo.IdCategoria = Convert.ToInt32(linha["VeiculoIdCategoria"]);
                 veiculo.Categoria = new Categoria();
                 veiculo.Categoria.Nome = linha["CategoriaNome"].ToString();
                 veiculos.Add(veiculo);
